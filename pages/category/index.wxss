@@ -1,0 +1,52 @@
+page {
+  height: 100%;
+}
+.tg_cates {
+  height: 100%;
+}
+.tg_cates .cates_container {
+  /* less中使用calc的时候要注意 */
+  height: calc( 100vh - 90rpx );
+  display: flex;
+}
+.tg_cates .cates_container .left_menu {
+  /* 子项 高度 100% flex */
+  flex: 2;
+}
+.tg_cates .cates_container .left_menu .menu_item {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.tg_cates .cates_container .left_menu .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.tg_cates .cates_container .right_content {
+  /* 子项 高度 100% flex */
+  flex: 5;
+}
+.tg_cates .cates_container .right_content .goods_group .goods_title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tg_cates .cates_container .right_content .goods_group .goods_title .delimiter {
+  color: #ccc;
+  padding: 0 10rpx;
+}
+.tg_cates .cates_container .right_content .goods_group .goods_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tg_cates .cates_container .right_content .goods_group .goods_list navigator {
+  width: 33.33%;
+  text-align: center;
+  flex-direction: column;
+}
+.tg_cates .cates_container .right_content .goods_group .goods_list navigator image {
+  width: 50%;
+}
